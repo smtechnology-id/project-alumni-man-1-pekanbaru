@@ -11,7 +11,8 @@ class AdminController extends Controller
 {
     public function dashboard()
     {
-        return view('admin.dashboard');
+        $alumni = Dataset::all()->count();
+        return view('admin.dashboard', compact('alumni'));
     }
     public function dataAlumni()
     {

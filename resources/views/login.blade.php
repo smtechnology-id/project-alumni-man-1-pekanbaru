@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Responsive Admin Dashboard Template">
+    <meta name="description" content="Sistem Pendataan Alumni MAN 1 Kota Pekan Baru">
     <meta name="keywords" content="admin,dashboard">
     <meta name="author" content="stacks">
     <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Neptune - Responsive Admin Dashboard Template</title>
+    <title>Login Dashboard - Sistem Pendataan Alumni MAN 1 Kota Pekan Baru</title>
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">

@@ -2,16 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive Admin Dashboard Template">
+    <meta name="keywords" content="admin,dashboard">
+    <meta name="author" content="stacks">
     {{-- bootstraps --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
         integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Form Pendataan Alumni MAN 1 Kota Pekan Baru</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/images/neptune.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/neptune.png') }}" />
 </head>
 
 <body>
@@ -166,8 +171,7 @@
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1"><i class="bi bi-facebook"></i></span>
                                 <input type="text" id="facebook" name="facebook" class="form-control"
-                                    placeholder="Facebook" aria-label="Facebook" aria-describedby="basic-addon1"
-                                    required>
+                                    placeholder="Facebook" aria-label="Facebook" aria-describedby="basic-addon1">
                             </div>
                         </div>
                         <div class="col-4">
@@ -175,15 +179,15 @@
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1"><i class="bi bi-instagram"></i></span>
                                 <input type="text" id="instagram" name="instagram" class="form-control"
-                                    placeholder="Instagram" aria-label="Instagram" aria-describedby="basic-addon1"
-                                    required>
+                                    placeholder="Instagram" aria-label="Instagram" aria-describedby="basic-addon1">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-3">
                             <div class="form-group mb-3">
-                                <label for="foto" class="form-label">Pendidikan Terakhir</label>
+                                <label for="foto" class="form-label">Pendidikan Terakhir <span
+                                        class="text-danger">*</span></label>
                                 <select name="pendidikan_terakhir" id="pendidikan_terakhir" class="form-select"
                                     required>
                                     <option value="">Pilih Pendidikan Terakhir</option>
@@ -198,7 +202,8 @@
                         </div>
                         <div class="col-2">
                             <div class="form-group mb-3">
-                                <label for="kuliah" class="form-label">Kuliah?</label>
+                                <label for="kuliah" class="form-label">Kuliah? <span
+                                        class="text-danger">*</span></label>
                                 <select name="kuliah" id="kuliah" class="form-select" required>
                                     <option value="">Pilih ...</option>
                                     <option value="Ya">Ya</option>
@@ -208,7 +213,8 @@
                         </div>
                         <div class="col-2">
                             <div class="form-group mb-3">
-                                <label for="bekerja" class="form-label">Bekerja?</label>
+                                <label for="bekerja" class="form-label">Bekerja? <span
+                                        class="text-danger">*</span></label>
                                 <select name="bekerja" id="bekerja" class="form-select" required>
                                     <option value="">Pilih ...</option>
                                     <option value="Ya">Ya</option>
@@ -218,7 +224,8 @@
                         </div>
                         <div class="col-2">
                             <div class="form-group mb-3">
-                                <label for="berkeluarga" class="form-label">Berkeluarga?</label>
+                                <label for="berkeluarga" class="form-label">Berkeluarga? <span
+                                        class="text-danger">*</span></label>
                                 <select name="berkeluarga" id="berkeluarga" class="form-select" required>
                                     <option value="">Pilih ...</option>
                                     <option value="Ya">Ya</option>
@@ -228,7 +235,8 @@
                         </div>
                         <div class="col-2">
                             <div class="form-group mb-3">
-                                <label for="menganggur" class="form-label">Menganggur?</label>
+                                <label for="menganggur" class="form-label">Menganggur? <span
+                                        class="text-danger">*</span></label>
                                 <select name="menganggur" id="menganggur" class="form-select" required>
                                     <option value="">Pilih ...</option>
                                     <option value="Ya">Ya</option>
@@ -238,7 +246,7 @@
                         </div>
                     </div>
                     <br>
-                    <h5>Biodata Kampus (Setelah Lulus dari SMA Unggulan Haf-Sa)</h5>
+                    <h5>Biodata Kampus (Setelah Lulus dari MAN 1 Kota Pekan Baru)</h5>
                     <div class="row">
                         <div class="col-3">
                             <label for="jenis_perguruan_tinggi" class="form-label">Jenis Perguruan Tinggi </label>
@@ -253,18 +261,18 @@
                                 <span class="text-danger">*</span></label>
                             <input type="number" class="form-control" id="tahun_masuk_perguruan_tinggi"
                                 name="tahun_masuk_perguruan_tinggi" aria-describedby="tahun_masuk_perguruan_tinggi"
-                                placeholder="0000" required>
+                                placeholder="0000" >
                         </div>
                         <div class="col-3">
                             <label for="nama_perguruan_tinggi" class="form-label">Nama Perguruan Tinggi</label>
                             <input type="text" class="form-control" id="nama_perguruan_tinggi"
                                 name="nama_perguruan_tinggi" aria-describedby="nama_perguruan_tinggi"
-                                placeholder="Nama Perguruan Tinggi" required>
+                                placeholder="Nama Perguruan Tinggi" >
                         </div>
                         <div class="col-3">
                             <label for="program_studi" class="form-label">Program Studi</label>
                             <input type="text" class="form-control" id="program_studi" name="program_studi"
-                                aria-describedby="program_studi" placeholder="Program Studi / Jurusan" required>
+                                aria-describedby="program_studi" placeholder="Program Studi / Jurusan" >
                         </div>
                     </div>
                     <br>
@@ -273,17 +281,17 @@
                         <div class="col-4">
                             <label for="jenis_pekerjaan" class="form-label">Jenis Pekerjaan</label>
                             <input type="text" class="form-control" id="jenis_pekerjaan" name="jenis_pekerjaan"
-                                aria-describedby="jenis_pekerjaan" placeholder="Jenis Pekerjaan" required>
+                                aria-describedby="jenis_pekerjaan" placeholder="Jenis Pekerjaan" >
                         </div>
                         <div class="col-4">
                             <label for="nama_perusahaan" class="form-label">Instansi / Lembaga / Perusahaan</label>
                             <input type="text" class="form-control" id="nama_perusahaan" name="nama_perusahaan"
-                                aria-describedby="nama_perusahaan" placeholder="Nama Perusahaan" required>
+                                aria-describedby="nama_perusahaan" placeholder="Nama Perusahaan" >
                         </div>
                         <div class="col-4">
                             <label for="jabatan" class="form-label">Jabatan</label>
                             <input type="text" class="form-control" id="jabatan" name="jabatan"
-                                aria-describedby="jabatan" placeholder="Jabatan" required>
+                                aria-describedby="jabatan" placeholder="Jabatan" >
                         </div>
                     </div>
                     <div class="row mt-5">
